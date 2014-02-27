@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+	<table  class="pure-table pure-table-bordered" width="100%" align="center">
+	<thead>
+	<tr>
+		<td>Installer Name</td>
+		{% for branch in branches %}
+			<td>{{branch.getNameOfBranch()}}</td>
+		{% endfor %}
+	</tr>
+	</thead>
+	<tbody>
+  {% for entry in entries %}
+	<tr class="{{ loop.cycle('pure-table-odd', 'pure-table-even') }}">
+		<td>{% if entry["app_object"].url %}<a href="{{entry["app_object"].url }}">{{ entry["app_object"].display_name }}</a>{% else %}<p>{{ entry["app_object"].display_name }}</p>{%endif %}<p class="littleText">[{{ entry["app_object"].name }}] {{ entry["app_object"].description }} - {{ entry["app_object"].license }}</p></td>
+		{% for branch in branches %}
+			<td>
+				{% for release in entry[branch.name] %}
+				<a href="{{ URLprefix }}/{{ release.location }}">{{ release.app_version }}</a>
+				{% if release %}
+					<p class="littleText">{{ release.min_os }} - {{ release.max_os }} </p>
+				{% endif %}
+				{% endfor %}
+			</td>
+					
+		{% endfor %}
+	</tr>
+  {% endfor %}
+  </tbody>
+  </table>
+{% endblock %}

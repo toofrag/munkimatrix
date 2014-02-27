@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+<title>Managed Applications</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='pure-min.css') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='screen.css') }}">
+</head>
+
+<body>
+	<div id="header">
+		<p>&nbsp;</p>
+	</div>
+	
+	<div class="colmask threecol">
+	<div class="colmid">
+		<div class="colleft">
+			<div class="col1">
+				{% block body %}{% endblock %}
+			</div>
+			<div class="col2">
+				<h1 class="RightAlignedText">Managed<br>Application<br>list</h1>
+				<p class="RightAlignedText">Software<br>in Munki<br>displayed by branch</p>
+			</div>
+		<div class="col3">
+			<p>&nbsp;</p>
+		</div>
+	</div>
+	<div class="alignRight">
+	</div>
+	</div>
+<div id="footer">
+	<p>&nbsp;</p>
+</div>
+	
+
+</body>
