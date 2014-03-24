@@ -252,7 +252,7 @@
 	</dict>
 	<dict>
 		<key>downloadURL</key>
-		<string>http://www.microsoft.com/mac/products/remote-desktop/default.mspx </string>
+		<string>https://itunes.apple.com/gb/app/microsoft-remote-desktop/id715768417?mt=12</string>
 		<key>installerName</key>
 		<string>MicrosoftRemoteDesktop</string>
 		<key>license</key>
