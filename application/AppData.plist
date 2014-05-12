@@ -148,7 +148,7 @@
 	</dict>
 	<dict>
 		<key>downloadURL</key>
-		<string>http://code.google.com/p/git-osx-installer/downloads/list?can=3</string>
+		<string>http://sourceforge.net/projects/git-osx-installer/files/</string>
 		<key>installerName</key>
 		<string>git</string>
 		<key>license</key>
@@ -820,7 +820,7 @@
 	</dict>
 	<dict>
 		<key>downloadURL</key>
-		<string>http://mercurial.selenic.com/downloads/</string>
+		<string>http://mercurial.selenic.com/downloads</string>
 		<key>installerName</key>
 		<string>mercurialLion</string>
 		<key>license</key>
